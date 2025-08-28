@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced HTML5 Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      line-height: 1.6;
+    }
+    header, main, footer {
+      margin-bottom: 2em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      text-align: left;
+    }
+    fieldset {
+      border: 1px solid #aaa;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 0.5em;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Enhanced Form Page</h1>
+    <p>This page demonstrates semantic HTML5 structure, media embedding, and a fully featured form.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📋 Features List</h2>
+      <ul>
+        <li>Semantic HTML5 layout</li>
+        <li>Embedded media content</li>
+        <li>Accessible and validated form</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📊 HTML5 Form Attributes Comparison</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Purpose</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>placeholder</td>
+            <td>Shows hint text inside input</td>
+            <td>&lt;input placeholder="Enter name"&gt;</td>
+          </tr>
+          <tr>
+            <td>required</td>
+            <td>Ensures field must be filled</td>
+            <td>&lt;input required&gt;</td>
+          </tr>
+          <tr>
+            <td>autocomplete</td>
+            <td>Suggests previously entered values</td>
+            <td>&lt;input autocomplete="email"&gt;</td>
+          </tr>
+          <tr>
+            <td>readonly</td>
+            <td>Prevents editing of field</td>
+            <td>&lt;input readonly value="Fixed"&gt;</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>🎧 Embedded Media</h2>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls width="400">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>📝 User Registration Form</h2>
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required autocomplete="name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" pattern="[A-Za-z0-9]{5,}" title="At least 5 alphanumeric characters" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="6" required>
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" minlength="6" required>
+
+          <label for="readonly">Referral Code (readonly):</label>
+          <input type="text" id="readonly" name="referral" value="REF12345" readonly>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Info</legend>
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+          <label for="newsletter">Subscribe to newsletter:</label>
+          <input type="checkbox" id="newsletter" name="newsletter" checked>
+        </fieldset>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Demo. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
