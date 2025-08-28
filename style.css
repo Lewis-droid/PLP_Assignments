@@ -1,0 +1,54 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Card layout */
+.card {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Highlighted card */
+.highlight {
+  border-color: #0077cc;
+  background-color: #e6f2ff;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+#footer-text {
+  font-size: 0.9rem;
+  color: #999;
+}
