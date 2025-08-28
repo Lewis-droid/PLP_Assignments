@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn how to build accessible, semantic, and SEO-friendly HTML5 web pages." />
+  <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, web development" />
+  <meta name="author" content="Your Name" />
+  <title>Accessible & Semantic HTML5 Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Welcome to Semantic Web Design</h1>
+    <p>Your guide to building better, accessible websites.</p>
+  </header>
+
+  <main role="main">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>This page demonstrates how to use semantic HTML5 elements, improve accessibility, and optimize for search engines.</p>
+    </section>
+
+    <section id="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Key Features</h2>
+      <ul>
+        <li><strong>Semantic Structure:</strong> Uses elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>.</li>
+        <li><strong>Accessibility:</strong> Includes ARIA roles, labels, and proper heading hierarchy.</li>
+        <li><strong>SEO:</strong> Metadata and content are optimized for search engines.</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form action="/submit" method="POST" aria-describedby="contact-description">
+        <p id="contact-description">Fill out the form below to get in touch.</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Semantic Web Design. All rights reserved.</p>
+  </footer>
+</body>
+</html>
